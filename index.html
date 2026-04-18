@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RiceMovies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div id="welcome-screen">
+  <div class="logo-text">RiceMovies</div>
+  <div class="tagline">Stream Everything</div>
+</div>
+
+<nav class="navbar" id="navbar">
+  <div class="navbar-left">
+    <a href="index.html" class="nav-logo">RICE<span style="color:#fff">MOVIES</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Discover</a>
+      <a href="favorite.html">Favorites</a>
+      <a href="downloads.html">Downloads</a>
+    </div>
+  </div>
+  <div class="navbar-right">
+    <div class="search-wrapper">
+      <button class="search-toggle" id="searchToggle" aria-label="Search">
+        <i class="bi bi-search"></i>
+      </button>
+      <div class="search-input-wrap" id="searchInputWrap">
+        <input type="text" id="searchInput" placeholder="Titles, people, genres..." autocomplete="off" />
+        <button class="search-toggle" id="searchClose" style="padding:6px 8px;">
+          <i class="bi bi-x-lg" style="font-size:0.9rem"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section id="hero">
+  <div id="hero-bg"></div>
+  <div class="hero-gradient"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="bi bi-fire"></i> Trending Now</div>
+    <h1 id="hero-title">Loading...</h1>
+    <div class="hero-meta">
+      <span class="hero-rating" id="hero-rating"></span>
+      <span class="hero-year" id="hero-year"></span>
+      <span class="hero-tag" id="hero-genre"></span>
+    </div>
+    <p id="hero-overview"></p>
+    <div class="hero-buttons">
+      <button class="btn-play" id="hero-play"><i class="bi bi-play-fill"></i> Play</button>
+      <button class="btn-more" id="hero-info"><i class="bi bi-info-circle"></i> More Info</button>
+    </div>
+  </div>
+  <div class="hero-dots" id="heroDots"></div>
+</section>
+
+<div id="searchResultsPane">
+  <div class="row-title" style="margin-bottom:20px; font-size:1.4rem;">Search Results</div>
+  <div class="search-grid" id="searchGrid"></div>
+</div>
+
+<div class="content-wrap" id="discoverContainer"></div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
